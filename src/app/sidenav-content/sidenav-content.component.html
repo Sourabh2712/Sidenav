@@ -1,0 +1,17 @@
+<h1>HhhhhhhH</h1>
+
+<mat-list>
+    <div mat-subheader>Folders</div>
+    <mat-list-item *ngFor="let folder of folders">
+        <mat-icon mat-list-icon>folder</mat-icon>
+        <div mat-line [routerLink]="folder.url">{{folder.name}}</div>
+        <div mat-line> {{folder.updated | date}} </div>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <div mat-subheader>Account</div>
+    <mat-list-item *ngFor="let account of account">
+        <mat-icon mat-list-icon>account</mat-icon>
+        <div mat-line [routerLink]="account.url">{{account.name}}</div>
+        <div mat-line> {{account.updated | date}} </div>
+    </mat-list-item>
+</mat-list>

@@ -7,9 +7,25 @@ import { MaterilasModule } from './materilas/materilas.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import 'hammerjs';
 import { NavComponent } from './nav/nav.component';
+import { SidenavContentComponent } from './sidenav-content/sidenav-content.component';
+import { ToolbarComponent } from './Components/toolbar/toolbar.component';
+import { HomeComponent } from './Components/home/home.component';
+import { ProfileComponent } from './Components/profile/profile.component';
+import { AcademyComponent } from './Components/academy/academy.component';
+// import { LogoutComponent } from './Components/logout/logout.component';
+import { SettingComponent } from './Components/setting/setting.component';
 
 @NgModule({
-  declarations: [AppComponent, NavComponent],
+  declarations: [
+    AppComponent,
+    NavComponent,
+    SidenavContentComponent,
+    ToolbarComponent,
+    HomeComponent,
+    ProfileComponent,
+    AcademyComponent,
+    SettingComponent,
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
