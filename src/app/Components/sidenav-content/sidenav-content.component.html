@@ -1,0 +1,25 @@
+<div>
+    <mat-card>Simple card</mat-card>
+
+
+</div>
+<mat-divider></mat-divider>
+<mat-list>
+
+    <div mat-header style="display: flex; font-size: 15px;">Dashboards</div>
+    <mat-list-item *ngFor="let dashboard of folders" [routerLink]="dashboard.url" routerLinkActive="list-item-active">
+        <img matListAvatar src="{{dashboard.img}}" alt="...">
+        <p>inside the navcompoent-side nave</p>
+        <!-- <mat-icon mat-list-icon>folder</mat-icon> -->
+        <div mat-line>{{dashboard.name}}</div>
+        <!-- <div mat-line> {{folder.updated | date}} </div> -->
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <div mat-subheader>Account</div>
+    <mat-list-item *ngFor="let account of account" [routerLink]="account.url" routerLinkActive="list-item-active">
+        <img matListAvatar src="{{account.img}}" alt="...">
+        <!-- <mat-icon mat-list-icon>account</mat-icon> -->
+        <div mat-line>{{account.name}}</div>
+        <!-- <div mat-line> {{account.updated | date}} </div> -->
+    </mat-list-item>
+</mat-list>

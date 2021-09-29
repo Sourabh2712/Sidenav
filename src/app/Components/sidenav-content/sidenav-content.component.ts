@@ -3,6 +3,7 @@ export interface Section {
   name: string;
   updated: Date;
   url: string;
+  img: string;
 }
 @Component({
   selector: 'app-sidenav-content',
@@ -18,16 +19,19 @@ export class SidenavContentComponent implements OnInit {
       name: 'Home',
       updated: new Date('1/1/16'),
       url: '/home',
+      img: '../../assets/image/Group 3.png',
     },
     {
       name: 'Academy',
       updated: new Date('1/17/16'),
       url: '/academy',
+      img: '',
     },
     {
       name: 'Profile',
       updated: new Date('1/28/16'),
       url: '/profile',
+      img: '../../assets/image/Group 2.png',
     },
   ];
   account: Section[] = [
@@ -35,11 +39,7 @@ export class SidenavContentComponent implements OnInit {
       name: 'Setting',
       updated: new Date('2/20/16'),
       url: '/setting',
+      img: '../../assets/image/Group 1.png',
     },
-    // {
-    //   name: 'Logout',
-    //   updated: new Date('1/18/16'),
-
-    // },
   ];
 }

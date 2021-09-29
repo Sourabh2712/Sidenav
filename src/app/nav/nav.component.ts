@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatDrawer } from '@angular/material/sidenav';
-import { CommanserviceService } from '../Service/commanservice.service';
+import { CommanserviceService } from 'src/app/Service/commanservice.service';
 
 @Component({
   selector: 'app-nav',

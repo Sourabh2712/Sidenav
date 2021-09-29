@@ -7,7 +7,7 @@ import { MaterilasModule } from './materilas/materilas.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import 'hammerjs';
 import { NavComponent } from './nav/nav.component';
-import { SidenavContentComponent } from './sidenav-content/sidenav-content.component';
+import { SidenavContentComponent } from './Components/sidenav-content/sidenav-content.component';
 import { ToolbarComponent } from './Components/toolbar/toolbar.component';
 import { HomeComponent } from './Components/home/home.component';
 import { ProfileComponent } from './Components/profile/profile.component';
