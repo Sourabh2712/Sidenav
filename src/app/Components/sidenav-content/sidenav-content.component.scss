@@ -1,6 +1,5 @@
 .list-item-active {
   font-weight: bolder;
-  // color: blue;
   font-size: x-large;
   height: 30px;
   background-color: white;
@@ -14,13 +13,11 @@
   padding: 16px;
   border-radius: 4px;
   margin: 10px;
-  // background-color: blanchedalmond;
 }
 .post {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 250px;
   flex-direction: column;
   margin: 10px;
   flex-wrap: wrap;
@@ -32,14 +29,6 @@
   margin: 15px;
   font-size: x-large;
   font-weight: bolder;
-}
-.imge {
-  background-image: url(../../../assets/image/bruce-mars.png);
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background-position: center;
-  background-size: cover;
 }
 .mat-list-item {
   margin: 10px;

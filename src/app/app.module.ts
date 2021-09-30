@@ -14,6 +14,8 @@ import { ProfileComponent } from './Components/profile/profile.component';
 import { AcademyComponent } from './Components/academy/academy.component';
 // import { LogoutComponent } from './Components/logout/logout.component';
 import { SettingComponent } from './Components/setting/setting.component';
+import { ImageDirective } from './Components/image.directive';
+// import { ImageDirective } from './image.directive';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { SettingComponent } from './Components/setting/setting.component';
     ProfileComponent,
     AcademyComponent,
     SettingComponent,
+    ImageDirective,
   ],
   imports: [
     BrowserModule,

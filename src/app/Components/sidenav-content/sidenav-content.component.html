@@ -1,6 +1,7 @@
 <div class="post">
-    <div class="imge">
-    </div>
+    <!-- <div class="imge">
+    </div> -->
+    <img src="../../../assets/image/bruce-mars.png" alt="" [height]='200' [width]='200' [radius]='50' appImage>
     <h1>Mr. ERROR</h1>
 </div>
 <mat-divider></mat-divider>
@@ -8,15 +9,13 @@
     <div mat-header style="text-align: center; font-size: 20px;">Dashboards</div>
     <mat-list-item style="width: auto;" *ngFor="let dashboard of folders" [routerLink]="dashboard.url"
         routerLinkActive="list-item-active">
-        <img matListAvatar src="{{dashboard.img}}" alt="...">
-        <!-- <mat-icon mat-list-icon>folder</mat-icon> -->
+        <img matListAvatar src="{{dashboard.img}}" alt="..." [height]='50' [width]='50' [radius]="10" appImage>
         <div mat-line>{{dashboard.name}}</div>
-        <!-- <div mat-line> {{folder.updated | date}} </div> -->
     </mat-list-item>
     <mat-divider></mat-divider>
     <div mat-subheader style="justify-content: center; font-size: 20px;">Account</div>
     <mat-list-item *ngFor="let account of account" [routerLink]="account.url" routerLinkActive="list-item-active">
-        <img matListAvatar src="{{account.img}}" alt="...">
+        <img matListAvatar src="{{account.img}}" alt="..." [height]='50' [width]='50' [radius]="10" appImage>
         <!-- <mat-icon mat-list-icon>account</mat-icon> -->
         <div mat-line>{{account.name}}</div>
         <!-- <div mat-line> {{account.updated | date}} </div> -->
