@@ -1,11 +1,11 @@
 .tool {
   background-image: url(../../../assets/image/banner.jpg);
-  height: 85px;
+  background: linear-gradient(135deg, #ff0080 0%, #7928ca 100%);
+  height: 90px;
   // margin: 10px;
 }
-.hed {
-  background: linear-gradient(135deg, #ff0080 0%, #7928ca 100%);
-  mix-blend-mode: normal;
-  width: 100%;
-  border-radius: 12px;
+
+* {
+  margin: 0px;
+  padding: 0px;
 }
